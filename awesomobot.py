@@ -5,8 +5,6 @@ from itertools import cycle
 #import youtube_dl
 
 # token da api
-#TOKEN = 'NTU0Nzg2NjE5OTMzMzI3Mzgy.D2htGQ.0OW_Ns-CU2G8SKVWtrNIzHfk0Jg' ANTIGO
-TOKEN= 'NTU1MTY3NjM5Mjc0NzgyNzMw.D2nPxw.hVd1N4jIezR0efXj8q9Tx8e_Uuw'
 
 # prefixo antes dos comandos
 client = commands.Bot(command_prefix = '.')

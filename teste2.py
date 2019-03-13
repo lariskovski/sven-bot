@@ -7,7 +7,7 @@ import youtube_dl
 damn_son = 'https://www.youtube.com/watch?v=z8RkR4rd7dM'
 
 # token da api
-TOKEN = 'NTU0Nzg2NjE5OTMzMzI3Mzgy.D2htGQ.0OW_Ns-CU2G8SKVWtrNIzHfk0Jg'
+TOKEN = ''
 
 # prefixo antes dos comandos
 client = commands.Bot(command_prefix = '.')

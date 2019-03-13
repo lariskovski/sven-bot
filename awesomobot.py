@@ -5,6 +5,7 @@ from itertools import cycle
 #import youtube_dl
 
 # token da api
+TOKEN = ''
 
 # prefixo antes dos comandos
 client = commands.Bot(command_prefix = '.')
@@ -146,7 +147,51 @@ async def gatinho(ctx):
 	voice_client = client.voice_client_in(server)
 	player = voice_client.create_ffmpeg_player('audio/gatinho.mp3')
 	player.start()
+	
+	
+@client.command(pass_context=True)
+async def naruto(ctx):
+	server = ctx.message.server
+	voice_client = client.voice_client_in(server)
+	player = voice_client.create_ffmpeg_player('audio/new-naturo.mp3')
+	player.start()
 
+	
+@client.command(pass_context=True)
+async def berg(ctx):
+	server = ctx.message.server
+	voice_client = client.voice_client_in(server)
+	player = voice_client.create_ffmpeg_player('audio/new-berg.mp3')
+	player.start()
+
+@client.command(pass_context=True)
+async def fahur(ctx):
+	server = ctx.message.server
+	voice_client = client.voice_client_in(server)
+	player = voice_client.create_ffmpeg_player('audio/new-fahur.mp3')
+	player.start()
+	
+@client.command(pass_context=True)
+async def cafe(ctx):
+	server = ctx.message.server
+	voice_client = client.voice_client_in(server)
+	player = voice_client.create_ffmpeg_player('audio/new-cafe.mp3')
+	player.start()
+
+@client.command(pass_context=True)
+async def coffee(ctx):
+	server = ctx.message.server
+	voice_client = client.voice_client_in(server)
+	player = voice_client.create_ffmpeg_player('audio/new-coffee.mp3')
+	player.start()
+	
+@client.command(pass_context=True)
+async def lick(ctx):
+	server = ctx.message.server
+	voice_client = client.voice_client_in(server)
+	player = voice_client.create_ffmpeg_player('audio/new-lick.mp3')
+	player.start()
+	
 client.loop.create_task(change_status())
 client.run(TOKEN)
 

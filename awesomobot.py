@@ -221,6 +221,48 @@ async def notfeelgood(ctx):
 	player = voice_client.create_ffmpeg_player('audio/notfeelgood.mp3')
 	player.start()
 	
+@client.command(pass_context=True)
+async def sucks(ctx):
+	server = ctx.message.server
+	voice_client = client.voice_client_in(server)
+	player = voice_client.create_ffmpeg_player('audio/sucks.mp3')
+	player.start()
+	
+@client.command(pass_context=True)
+async def epic(ctx):
+	server = ctx.message.server
+	voice_client = client.voice_client_in(server)
+	player = voice_client.create_ffmpeg_player('audio/epic.mp3')
+	player.start()
+	
+@client.command(pass_context=True)
+async def meat(ctx):
+	server = ctx.message.server
+	voice_client = client.voice_client_in(server)
+	player = voice_client.create_ffmpeg_player('audio/meat.mp3')
+	player.start()
+	
+@client.command(pass_context=True)
+async def term(ctx):
+	server = ctx.message.server
+	voice_client = client.voice_client_in(server)
+	player = voice_client.create_ffmpeg_player('audio/term.mp3')
+	player.start()
+	
+@client.command(pass_context=True)
+async def stray(ctx):
+	server = ctx.message.server
+	voice_client = client.voice_client_in(server)
+	player = voice_client.create_ffmpeg_player('audio/stray.mp3')
+	player.start()
+	
+@client.command(pass_context=True)
+async def ayuss(ctx):
+	server = ctx.message.server
+	voice_client = client.voice_client_in(server)
+	player = voice_client.create_ffmpeg_player('audio/ayuss.mp3')
+	player.start()
+	
 client.loop.create_task(change_status())
 client.run(TOKEN)
 

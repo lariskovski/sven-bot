@@ -67,6 +67,13 @@ async def help():
         	.coffee
         	.lick
 		.stop
+		.epic
+		.ayuss
+		.meat
+		.notfeelgood
+		.stray
+		.sucks
+		.term
 		.quackjob""")
 
 @client.command(pass_context=True)

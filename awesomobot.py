@@ -5,7 +5,7 @@ from itertools import cycle
 #import youtube_dl
 
 # token da api
-TOKEN = ''
+TOKEN = 'NTU1MTY3NjM5Mjc0NzgyNzMw.D2ptxQ.ej_YWc2cD2yH5gFyJyTfcmIG7nU'
 
 # prefixo antes dos comandos
 client = commands.Bot(command_prefix = '.')
@@ -61,11 +61,11 @@ async def help():
 		.pqp
 		.mamamia
 		.naruto
-        	.berg
-        	.fahur
-        	.cafe
-        	.coffee
-        	.lick
+		.berg
+		.fahur
+		.cafe
+		.coffee
+		.lick
 		.stop
 		.epic
 		.ayuss
@@ -168,7 +168,7 @@ async def gatinho(ctx):
 async def naruto(ctx):
 	server = ctx.message.server
 	voice_client = client.voice_client_in(server)
-	player = voice_client.create_ffmpeg_player('audio/new-naturo.mp3')
+	player = voice_client.create_ffmpeg_player('audio/new-naruto.mp3')
 	player.start()
 
 	

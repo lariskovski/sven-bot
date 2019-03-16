@@ -40,7 +40,6 @@ async def leave(ctx):
 	voice_client = client.voice_client_in(server)
 	await voice_client.disconnect()
 
-
 """ ========================== COMANDOS DE VOZ ============================="""
 for (dirpath, dirnames, filenames) in walk('audio'):
 	files = filenames

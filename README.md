@@ -5,8 +5,8 @@ Update Instructions:
   - All audios must be in the 'audio' folder;
   - No need to add the new entries to the .help command. It's automated now;
   - Keep it clean;
-  - If there is updates to the bot, its manually updated to the server.
+  - If there is updates to the bot, its manually uploaded to the server (for now);
  
 WIP:
-  - Automatic server update;
-  - Reduce repetitive code;
+  - Automatic server updates/upload;
+  - Reduce repetitive code (on command functions);

@@ -1,7 +1,8 @@
-import discord
 from discord.ext import commands
-import asyncio
 from itertools import cycle
+from os import walk
+import discord
+import asyncio
 
 # token da api
 TOKEN = 'NTU1MTY3NjM5Mjc0NzgyNzMw.D2ptxQ.ej_YWc2cD2yH5gFyJyTfcmIG7nU'

@@ -2,7 +2,6 @@ import discord
 from discord.ext import commands
 import asyncio
 from itertools import cycle
-#import youtube_dl
 
 # token da api
 TOKEN = 'NTU1MTY3NjM5Mjc0NzgyNzMw.D2ptxQ.ej_YWc2cD2yH5gFyJyTfcmIG7nU'
@@ -43,38 +42,17 @@ async def leave(ctx):
 
 
 """ ========================== COMANDOS DE VOZ ============================="""
+for (dirpath, dirnames, filenames) in walk('audio'):
+	files = filenames
+audios = []
+for audio in files:
+	audio = '.' + audio
+	audios.append(audio.replace('.mp3',''))
+audios = '\n'.join(audios)
 
 @client.command()
 async def help():
-	await client.say("""
-		Lista de comandos:
-		.gatinho
-		.nope
-		.tf
-		.sefodeu
-		.alert
-		.damnson
-		.confirmed
-		.sonic
-		.mlg
-		.csgo
-		.pqp
-		.mamamia
-		.naruto
-		.berg
-		.fahur
-		.cafe
-		.coffee
-		.lick
-		.stop
-		.epic
-		.ayuss
-		.meat
-		.notfeelgood
-		.stray
-		.sucks
-		.term
-		.quackjob""")
+	await client.say(audios)
 
 @client.command(pass_context=True)
 async def damnson(ctx):
@@ -272,4 +250,3 @@ async def ayuss(ctx):
 	
 client.loop.create_task(change_status())
 client.run(TOKEN)
-

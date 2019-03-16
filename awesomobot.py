@@ -134,10 +134,10 @@ async def mamamia(ctx):
 	player.start()
 
 @client.command(pass_context=True)
-async def gatinho(ctx):
+async def miau(ctx):
 	server = ctx.message.server
 	voice_client = client.voice_client_in(server)
-	player = voice_client.create_ffmpeg_player('audio/gatinho.mp3')
+	player = voice_client.create_ffmpeg_player('audio/miau.mp3')
 	player.start()
 	
 	
@@ -145,7 +145,7 @@ async def gatinho(ctx):
 async def naruto(ctx):
 	server = ctx.message.server
 	voice_client = client.voice_client_in(server)
-	player = voice_client.create_ffmpeg_player('audio/new-naruto.mp3')
+	player = voice_client.create_ffmpeg_player('audio/naruto.mp3')
 	player.start()
 
 	
@@ -153,35 +153,35 @@ async def naruto(ctx):
 async def berg(ctx):
 	server = ctx.message.server
 	voice_client = client.voice_client_in(server)
-	player = voice_client.create_ffmpeg_player('audio/new-berg.mp3')
+	player = voice_client.create_ffmpeg_player('audio/berg.mp3')
 	player.start()
 
 @client.command(pass_context=True)
 async def fahur(ctx):
 	server = ctx.message.server
 	voice_client = client.voice_client_in(server)
-	player = voice_client.create_ffmpeg_player('audio/new-fahur.mp3')
+	player = voice_client.create_ffmpeg_player('audio/fahur.mp3')
 	player.start()
 	
 @client.command(pass_context=True)
 async def cafe(ctx):
 	server = ctx.message.server
 	voice_client = client.voice_client_in(server)
-	player = voice_client.create_ffmpeg_player('audio/new-cafe.mp3')
+	player = voice_client.create_ffmpeg_player('audio/cafe.mp3')
 	player.start()
 
 @client.command(pass_context=True)
 async def coffee(ctx):
 	server = ctx.message.server
 	voice_client = client.voice_client_in(server)
-	player = voice_client.create_ffmpeg_player('audio/new-coffee.mp3')
+	player = voice_client.create_ffmpeg_player('audio/coffee.mp3')
 	player.start()
 	
 @client.command(pass_context=True)
 async def lick(ctx):
 	server = ctx.message.server
 	voice_client = client.voice_client_in(server)
-	player = voice_client.create_ffmpeg_player('audio/new-lick.mp3')
+	player = voice_client.create_ffmpeg_player('audio/lick.mp3')
 	player.start()
 	
 @client.command(pass_context=True)

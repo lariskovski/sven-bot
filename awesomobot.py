@@ -269,7 +269,7 @@ async def rip(ctx):
 	player = voice_client.create_ffmpeg_player('audio/rip.mp3')
 	player.start()
 	
-	@client.command(pass_context=True)
+@client.command(pass_context=True)
 async def ayuda(ctx):
 	server = ctx.message.server
 	voice_client = client.voice_client_in(server)

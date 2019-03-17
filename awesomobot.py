@@ -247,6 +247,28 @@ async def ayuss(ctx):
 	voice_client = client.voice_client_in(server)
 	player = voice_client.create_ffmpeg_player('audio/ayuss.mp3')
 	player.start()
+
+@client.command(pass_context=True)
+async def monkeyman(ctx):
+	server = ctx.message.server
+	voice_client = client.voice_client_in(server)
+	player = voice_client.create_ffmpeg_player('audio/monkeyman.mp3')
+	player.start()
+
+@client.command(pass_context=True)
+async def sad(ctx):
+	server = ctx.message.server
+	voice_client = client.voice_client_in(server)
+	player = voice_client.create_ffmpeg_player('audio/sad.mp3')
+	player.start()
+	
+@client.command(pass_context=True)
+async def rip(ctx):
+	server = ctx.message.server
+	voice_client = client.voice_client_in(server)
+	player = voice_client.create_ffmpeg_player('audio/rip.mp3')
+	player.start()
+
 	
 client.loop.create_task(change_status())
 client.run(TOKEN)

@@ -62,25 +62,10 @@ async def damnson(ctx):
 	player.start()
 
 @client.command(pass_context=True)
-async def tf(ctx):
-	server = ctx.message.server
-	voice_client = client.voice_client_in(server)
-	player = voice_client.create_ffmpeg_player('audio/tf.mp3')
-	player.start()
-
-@client.command(pass_context=True)
 async def pqp(ctx):
 	server = ctx.message.server
 	voice_client = client.voice_client_in(server)
 	player = voice_client.create_ffmpeg_player('audio/pqp.mp3')
-	player.start()
-
-
-@client.command(pass_context=True)
-async def sefodeu(ctx):
-	server = ctx.message.server
-	voice_client = client.voice_client_in(server)
-	player = voice_client.create_ffmpeg_player('audio/sefodeu.mp3')
 	player.start()
 
 @client.command(pass_context=True)
@@ -106,26 +91,11 @@ async def nope(ctx):
 	player.start()
 
 @client.command(pass_context=True)
-async def confirmed(ctx):
-	server = ctx.message.server
-	voice_client = client.voice_client_in(server)
-	player = voice_client.create_ffmpeg_player('audio/confirmed.mp3')
-	player.start()
-
-@client.command(pass_context=True)
 async def alert(ctx):
 	server = ctx.message.server
 	voice_client = client.voice_client_in(server)
 	player = voice_client.create_ffmpeg_player('audio/alert.mp3')
 	player.start()
-
-@client.command(pass_context=True)
-async def csgo(ctx):
-	server = ctx.message.server
-	voice_client = client.voice_client_in(server)
-	player = voice_client.create_ffmpeg_player('audio/csgo.mp3')
-	player.start()
-
 
 @client.command(pass_context=True)
 async def mamamia(ctx):
@@ -197,13 +167,6 @@ async def quackjob(ctx):
 	server = ctx.message.server
 	voice_client = client.voice_client_in(server)
 	player = voice_client.create_ffmpeg_player('audio/quackjob.mp3')
-	player.start()
-	
-@client.command(pass_context=True)
-async def notfeelgood(ctx):
-	server = ctx.message.server
-	voice_client = client.voice_client_in(server)
-	player = voice_client.create_ffmpeg_player('audio/notfeelgood.mp3')
 	player.start()
 	
 @client.command(pass_context=True)

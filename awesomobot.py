@@ -103,14 +103,6 @@ async def mamamia(ctx):
 	voice_client = client.voice_client_in(server)
 	player = voice_client.create_ffmpeg_player('audio/mamamia.mp3')
 	player.start()
-
-@client.command(pass_context=True)
-async def miau(ctx):
-	server = ctx.message.server
-	voice_client = client.voice_client_in(server)
-	player = voice_client.create_ffmpeg_player('audio/miau.mp3')
-	player.start()
-	
 	
 @client.command(pass_context=True)
 async def naruto(ctx):

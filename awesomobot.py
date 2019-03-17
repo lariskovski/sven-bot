@@ -268,6 +268,90 @@ async def rip(ctx):
 	voice_client = client.voice_client_in(server)
 	player = voice_client.create_ffmpeg_player('audio/rip.mp3')
 	player.start()
+	
+	@client.command(pass_context=True)
+async def ayuda(ctx):
+	server = ctx.message.server
+	voice_client = client.voice_client_in(server)
+	player = voice_client.create_ffmpeg_player('audio/ayuda.mp3')
+	player.start()
+
+@client.command(pass_context=True)
+async def jaja(ctx):
+	server = ctx.message.server
+	voice_client = client.voice_client_in(server)
+	player = voice_client.create_ffmpeg_player('audio/jaja.mp3')
+	player.start()
+
+@client.command(pass_context=True)
+async def no(ctx):
+	server = ctx.message.server
+	voice_client = client.voice_client_in(server)
+	player = voice_client.create_ffmpeg_player('audio/no.mp3')
+	player.start()
+
+@client.command(pass_context=True)
+async def puto(ctx):
+	server = ctx.message.server
+	voice_client = client.voice_client_in(server)
+	player = voice_client.create_ffmpeg_player('audio/puto.mp3')
+	player.start()
+
+@client.command(pass_context=True)
+async def gta(ctx):
+	server = ctx.message.server
+	voice_client = client.voice_client_in(server)
+	player = voice_client.create_ffmpeg_player('audio/gta.mp3')
+	player.start()
+
+@client.command(pass_context=True)
+async def mentir(ctx):
+	server = ctx.message.server
+	voice_client = client.voice_client_in(server)
+	player = voice_client.create_ffmpeg_player('audio/mentir.mp3')
+	player.start()
+
+@client.command(pass_context=True)
+async def riso(ctx):
+	server = ctx.message.server
+	voice_client = client.voice_client_in(server)
+	player = voice_client.create_ffmpeg_player('audio/riso.mp3')
+	player.start()
+
+@client.command(pass_context=True)
+async def careless(ctx):
+	server = ctx.message.server
+	voice_client = client.voice_client_in(server)
+	player = voice_client.create_ffmpeg_player('audio/careless.mp3')
+	player.start()
+
+@client.command(pass_context=True)
+async def ohyeah(ctx):
+	server = ctx.message.server
+	voice_client = client.voice_client_in(server)
+	player = voice_client.create_ffmpeg_player('audio/ohyeah.mp3')
+	player.start()
+
+@client.command(pass_context=True)
+async def ayudenme(ctx):
+	server = ctx.message.server
+	voice_client = client.voice_client_in(server)
+	player = voice_client.create_ffmpeg_player('audio/ayudenme.mp3')
+	player.start()
+
+@client.command(pass_context=True)
+async def pig(ctx):
+	server = ctx.message.server
+	voice_client = client.voice_client_in(server)
+	player = voice_client.create_ffmpeg_player('audio/pig.mp3')
+	player.start()
+
+@client.command(pass_context=True)
+async def boo(ctx):
+	server = ctx.message.server
+	voice_client = client.voice_client_in(server)
+	player = voice_client.create_ffmpeg_player('audio/boo.mp3')
+	player.start()
 
 	
 client.loop.create_task(change_status())

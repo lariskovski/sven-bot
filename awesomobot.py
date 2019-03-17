@@ -307,6 +307,20 @@ async def boo(ctx):
 	voice_client = client.voice_client_in(server)
 	player = voice_client.create_ffmpeg_player('audio/boo.mp3')
 	player.start()
+	
+@client.command(pass_context=True)
+async def pepp(ctx):
+	server = ctx.message.server
+	voice_client = client.voice_client_in(server)
+	player = voice_client.create_ffmpeg_player('audio/pepp.mp3')
+	player.start()
+
+@client.command(pass_context=True)
+async def jestah(ctx):
+	server = ctx.message.server
+	voice_client = client.voice_client_in(server)
+	player = voice_client.create_ffmpeg_player('audio/jestah.mp3')
+	player.start()
 
 	
 client.loop.create_task(change_status())

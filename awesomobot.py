@@ -322,6 +322,104 @@ async def jestah(ctx):
 	player = voice_client.create_ffmpeg_player('audio/jestah.mp3')
 	player.start()
 
+@client.command(pass_context=True)
+async def nu(ctx):
+	server = ctx.message.server
+	voice_client = client.voice_client_in(server)
+	player = voice_client.create_ffmpeg_player('audio/nu.mp3')
+	player.start()
+
+@client.command(pass_context=True)
+async def dansa(ctx):
+	server = ctx.message.server
+	voice_client = client.voice_client_in(server)
+	player = voice_client.create_ffmpeg_player('audio/dansa.mp3')
+	player.start()
+
+@client.command(pass_context=True)
+async def cont(ctx):
+	server = ctx.message.server
+	voice_client = client.voice_client_in(server)
+	player = voice_client.create_ffmpeg_player('audio/cont.mp3')
+	player.start()
+
+@client.command(pass_context=True)
+async def dolph(ctx):
+	server = ctx.message.server
+	voice_client = client.voice_client_in(server)
+	player = voice_client.create_ffmpeg_player('audio/dolph.mp3')
+	player.start()
+
+@client.command(pass_context=True)
+async def reprov(ctx):
+	server = ctx.message.server
+	voice_client = client.voice_client_in(server)
+	player = voice_client.create_ffmpeg_player('audio/reprov.mp3')
+	player.start()
+
+@client.command(pass_context=True)
+async def dentad(ctx):
+	server = ctx.message.server
+	voice_client = client.voice_client_in(server)
+	player = voice_client.create_ffmpeg_player('audio/dentad.mp3')
+	player.start()
+
+@client.command(pass_context=True)
+async def traiu(ctx):
+	server = ctx.message.server
+	voice_client = client.voice_client_in(server)
+	player = voice_client.create_ffmpeg_player('audio/traiu.mp3')
+	player.start()
+
+@client.command(pass_context=True)
+async def serj(ctx):
+	server = ctx.message.server
+	voice_client = client.voice_client_in(server)
+	player = voice_client.create_ffmpeg_player('audio/serj.mp3')
+	player.start()
+
+@client.command(pass_context=True)
+async def parab(ctx):
+	server = ctx.message.server
+	voice_client = client.voice_client_in(server)
+	player = voice_client.create_ffmpeg_player('audio/parab.mp3')
+	player.start()
+
+@client.command(pass_context=True)
+async def bilu(ctx):
+	server = ctx.message.server
+	voice_client = client.voice_client_in(server)
+	player = voice_client.create_ffmpeg_player('audio/bilu.mp3')
+	player.start()
+
+@client.command(pass_context=True)
+async def jess(ctx):
+	server = ctx.message.server
+	voice_client = client.voice_client_in(server)
+	player = voice_client.create_ffmpeg_player('audio/jess.mp3')
+	player.start()
+
+@client.command(pass_context=True)
+async def chav(ctx):
+	server = ctx.message.server
+	voice_client = client.voice_client_in(server)
+	player = voice_client.create_ffmpeg_player('audio/chav.mp3')
+	player.start()
+
+@client.command(pass_context=True)
+async def caluni(ctx):
+	server = ctx.message.server
+	voice_client = client.voice_client_in(server)
+	player = voice_client.create_ffmpeg_player('audio/caluni.mp3')
+	player.start()
+
+@client.command(pass_context=True)
+async def some(ctx):
+	server = ctx.message.server
+	voice_client = client.voice_client_in(server)
+	player = voice_client.create_ffmpeg_player('audio/some.mp3')
+	player.start()
+
 	
 client.loop.create_task(change_status())
 client.run(TOKEN)

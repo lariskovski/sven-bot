@@ -454,5 +454,19 @@ async def opin(ctx):
 	player = voice_client.create_ffmpeg_player('audio/opin.mp3')
 	player.start()
 	
+@client.command(pass_context=True)
+async def bor(ctx):
+	server = ctx.message.server
+	voice_client = client.voice_client_in(server)
+	player = voice_client.create_ffmpeg_player('audio/bor.mp3')
+	player.start()
+
+@client.command(pass_context=True)
+async def boi(ctx):
+	server = ctx.message.server
+	voice_client = client.voice_client_in(server)
+	player = voice_client.create_ffmpeg_player('audio/boi.mp3')
+	player.start()
+	
 client.loop.create_task(change_status())
 client.run(TOKEN)

@@ -426,7 +426,33 @@ async def piss(ctx):
 	voice_client = client.voice_client_in(server)
 	player = voice_client.create_ffmpeg_player('audio/piss.mp3')
 	player.start()
+@client.command(pass_context=True)
+async def nikolai(ctx):
+	server = ctx.message.server
+	voice_client = client.voice_client_in(server)
+	player = voice_client.create_ffmpeg_player('audio/nikolai.mp3')
+	player.start()
 
+@client.command(pass_context=True)
+async def wat(ctx):
+	server = ctx.message.server
+	voice_client = client.voice_client_in(server)
+	player = voice_client.create_ffmpeg_player('audio/wat.mp3')
+	player.start()
+
+@client.command(pass_context=True)
+async def blyat(ctx):
+	server = ctx.message.server
+	voice_client = client.voice_client_in(server)
+	player = voice_client.create_ffmpeg_player('audio/blyat.mp3')
+	player.start()
+
+@client.command(pass_context=True)
+async def opin(ctx):
+	server = ctx.message.server
+	voice_client = client.voice_client_in(server)
+	player = voice_client.create_ffmpeg_player('audio/opin.mp3')
+	player.start()
 	
 client.loop.create_task(change_status())
 client.run(TOKEN)

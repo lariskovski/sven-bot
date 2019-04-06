@@ -489,5 +489,33 @@ async def cheeki(ctx):
 	player = voice_client.create_ffmpeg_player('audio/cheeki.mp3')
 	player.start()	
 	
+@client.command(pass_context=True)
+async def oi(ctx):
+	server = ctx.message.server
+	voice_client = client.voice_client_in(server)
+	player = voice_client.create_ffmpeg_player('audio/oi.mp3')
+	player.start()
+
+@client.command(pass_context=True)
+async def morr(ctx):
+	server = ctx.message.server
+	voice_client = client.voice_client_in(server)
+	player = voice_client.create_ffmpeg_player('audio/morr.mp3')
+	player.start()
+
+@client.command(pass_context=True)
+async def hey(ctx):
+	server = ctx.message.server
+	voice_client = client.voice_client_in(server)
+	player = voice_client.create_ffmpeg_player('audio/hey.mp3')
+	player.start()
+
+@client.command(pass_context=True)
+async def ai(ctx):
+	server = ctx.message.server
+	voice_client = client.voice_client_in(server)
+	player = voice_client.create_ffmpeg_player('audio/ai.mp3')
+	player.start(	
+	
 client.loop.create_task(change_status())
 client.run(TOKEN)

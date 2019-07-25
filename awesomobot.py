@@ -5,7 +5,7 @@ import discord
 import asyncio
 
 # token da api
-TOKEN = 'NTU1MTY3NjM5Mjc0NzgyNzMw.D2ptxQ.ej_YWc2cD2yH5gFyJyTfcmIG7nU'
+TOKEN = 'NTU1MTY3NjM5Mjc0NzgyNzMw.XTouLA.WFDhXJoBo8ZJ9S4t6owXOu2lma0'
 
 # prefixo antes dos comandos
 client = commands.Bot(command_prefix = '.')

@@ -5,10 +5,11 @@ Update Instructions:
   - All audios must be in the 'audio' folder;
   - No need to add the new entries to the .help command. It's automated now;
   - Keep it clean;
-  - If there is updates to the bot, its manually uploaded to the server (for now);
+  - If there is updates to the bot, its automatically uploaded to the server. So don't break it;
  
 WIP:
-   - [ ]  Automatic server updates/upload;
+   - [x]  Automatic server updates/upload;
+   - [ ]  Export some en variables;
    - [ ]  Reduce repetitive code (on command functions);
 
 --------------------------
@@ -67,3 +68,12 @@ EOF
 
 ### Start the service
 `service awesomobot start`
+
+
+--------------
+### Jenkins build option
+
+With Github-webhook active
+~~~~
+ssh root@dockerhost -p port "cp -r /var/lib/docker/volumes/[codigo do volume do container]/_data/workspace/audio-bot/* /root/audio-bot/ && service awesomobot restart"
+~~~~

@@ -8,8 +8,8 @@ Update Instructions:
   - If there is updates to the bot, its manually uploaded to the server (for now);
  
 WIP:
-  [ ]  Automatic server updates/upload;
-  [ ]  Reduce repetitive code (on command functions);
+   - [ ]  Automatic server updates/upload;
+   - [ ]  Reduce repetitive code (on command functions);
 
 --------------------------
 ## Setup:

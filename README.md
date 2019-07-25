@@ -13,7 +13,7 @@ WIP:
 
 --------------------------
 ## Setup:
------------------------------
+
 ### Python e dependencias
 `yum install git python36  python36-pip python36-setuptools python-devel libevent-devel  -y && mkdir ./awesomobot && cd ./awesomobot`
 

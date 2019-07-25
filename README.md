@@ -33,13 +33,16 @@ WIP:
 ### Arquivos do serviços
 `touch /etc/init.d/awesomobot.conf && touch /usr/lib/systemd/system/awesomobot.service`
 
-~~~~tee -a /etc/init.d/awesomobot.conf <<EOF
+~~~~
+tee -a /etc/init.d/awesomobot.conf <<EOF
 chdir /home/$USER/awesomobot
 exec python3.6 awesomobot.py
 respawn
-EOF~~~~
+EOF
+~~~~
 
-~~~~tee -a /usr/lib/systemd/system/awesomobot.service <<EOF
+~~~~
+tee -a /usr/lib/systemd/system/awesomobot.service <<EOF
 [Unit]
 Description=Discord Bot
 After=auditd.service systemd-user-sessions.service time-sync.target
@@ -59,7 +62,8 @@ LimitNOFILE=5555
 
 [Install]
 WantedBy=multi-user.target
-EOF~~~~
+EOF
+~~~~
 
 ### Start the service
 `service awesomobot start`

@@ -1,6 +1,8 @@
-# Discord Audio Bot
+# Sven Discord Audio Bot
 
-Inspired on the Sven server's bot.
+![skeleton](https://steamuserimages-a.akamaihd.net/ugc/172666989175739045/32D63249F0C0F276197D2576C86A081AB2061DD9/)
+
+Inspired on the Sven's server bot.
 
 ## Requirements
 

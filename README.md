@@ -4,7 +4,7 @@ Inspired on the Sven server's bot.
 
 ## Requirements
 
-- Create a bot application on [Discord's developers portal] (https://discord.com/developers/applications)
+- Create a bot application on [Discord's developers portal](https://discord.com/developers/applications)
 
 - Install Docker
 

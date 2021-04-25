@@ -8,7 +8,7 @@ import re
 TOKEN = getenv('API_TOKEN')
 client = commands.Bot(command_prefix = '.')
 
-# Get all audios file names
+# Get all file names from audio directory
 for (dirpath, dirnames, filenames) in walk('audio'):
 	files = filenames
 audios = []
@@ -39,10 +39,7 @@ async def play(ctx, *, text):
     # Delete command after the audio is done playing.
     await ctx.message.delete()
 
-@client.command(brief='pong')
-async def ping(ctx):
-    await ctx.send('pong')
-
+# Outputs on server terminal ready message
 @client.event
 async def on_ready():
     print(f'We have logged in as {client.user}')

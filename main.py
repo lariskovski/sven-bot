@@ -2,8 +2,6 @@ import discord
 from discord.ext import commands
 from os import getenv, walk
 from time import sleep
-from urllib import parse, request
-import re
 
 TOKEN = getenv('API_TOKEN')
 client = commands.Bot(command_prefix = '.')

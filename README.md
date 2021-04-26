@@ -8,11 +8,28 @@ Inspired on the Sven's server bot.
 
 - Create a bot application on [Discord's developers portal](https://discord.com/developers/applications)
 
+- Set the API_TOKEN env var from the Discord Application bot
+
 - Install Docker
 
-## Run the bot locally
+## Local Test
+
+Build the image and run locally using the Makefile:
 
 ~~~~
-docker build -t discord-bot  .
-docker run -ti --env API_TOKEN=XXXXXXX discord-bot
+make
+~~~~
+
+Opitionally, build, test and run separetely:
+
+~~~~
+make build
+make test
+make run
+~~~~
+
+Finally, clean everything with:
+
+~~~~
+make clean
 ~~~~

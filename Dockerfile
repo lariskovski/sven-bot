@@ -13,8 +13,10 @@ RUN apk add --no-cache  \
     gcc                 \
     ffmpeg
 
-COPY . .
+COPY requirements.txt .
 
 RUN pip3 install -r requirements.txt
 
-CMD ["python3", "./main.py"]
+COPY . .
+
+CMD ["python3", "/app/main.py"]

@@ -7,16 +7,13 @@ TOKEN = getenv('API_TOKEN')
 client = commands.Bot(command_prefix = '.')
 
 # Get all file names from audio directory
-for (dirpath, dirnames, filenames) in walk('audio'):
-	files = filenames
-audios = []
-for audio in files:
-	audios.append(audio.replace('.mp3',''))
+_, _, filenames = next(walk('audio'))
+audios = [audio.replace('.mp3', '') for audio in filenames]
 audios = ', '.join(audios)
 
 @client.command(name="audios", brief='Lists all audios available', pass_context=True)
 async def audiosAvailable(ctx):
-    await ctx.send(audios)
+    await ctx.send("```" + audios + "```")
 
 @client.command(brief='This command plus an audio name, plays it', name="play")
 async def play(ctx, *, text):

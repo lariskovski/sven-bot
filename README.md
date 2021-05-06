@@ -2,8 +2,6 @@
 
 [![Codeac](https://static.codeac.io/badges/2-175096899.svg "Codeac")](https://app.codeac.io/github/lariskovski/sven-bot)
 
-[![Build Status](https://dev.azure.com/larissaporto/devops/_apis/build/status/lariskovski.sven-bot?branchName=master)](https://dev.azure.com/larissaporto/devops/_build/latest?definitionId=2&branchName=master)
-
 ![skeleton](https://steamuserimages-a.akamaihd.net/ugc/172666989175739045/32D63249F0C0F276197D2576C86A081AB2061DD9/)
 
 Simple yet fun Python bot for Discord servers. Allows the server participants to give a command that plays one of the audio files in the `audio` dir. Inspired by awesome [Sven Co-op](https://store.steampowered.com/app/225840/Sven_Coop/) latam servers that had a similiar mechanism.

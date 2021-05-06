@@ -5,12 +5,12 @@ name: Python application
 
 on:
   push:
-    branches: [ master, staging ]
+    branches: [ master ]
   pull_request:
-    branches: [ master, staging ]
+    branches: [ master ]
 
 jobs:
-  build:
+  qa:
 
     runs-on: ubuntu-latest
 

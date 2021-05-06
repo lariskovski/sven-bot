@@ -1,4 +1,4 @@
-FROM alpine
+FROM alpine:3.13
 
 WORKDIR /app
 
@@ -15,7 +15,7 @@ RUN apk add --no-cache  \
 
 COPY requirements.txt .
 
-RUN pip3 install -r requirements.txt
+RUN pip3 install --no-cache-dir -r requirements.txt
 
 COPY src/ .
 

@@ -43,3 +43,7 @@ Finally, clean everything with:
 ~~~~
 make clean
 ~~~~
+
+## Sources
+
+[Github Actions and Docker](https://docs.docker.com/ci-cd/github-actions/)

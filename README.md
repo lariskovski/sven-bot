@@ -12,6 +12,8 @@ Simple yet fun Python bot for Discord servers. Allows the server participants to
 
 - Docker
 
+- Github Actions
+
 ## Requirements
 
 - Create a bot application on [Discord's developers portal](https://discord.com/developers/applications)

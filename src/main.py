@@ -2,6 +2,13 @@ import discord
 from discord.ext import commands
 from os import getenv, walk
 from time import sleep
+from quart import Quart
+
+app = Quart(__name__)
+
+@app.route('/')
+async def hello():
+    return 'hello'
 
 TOKEN = getenv('API_TOKEN')
 client = commands.Bot(command_prefix='.')
@@ -42,5 +49,8 @@ async def play(ctx, *, text):
 @client.event
 async def on_ready():
     print(f'We have logged in as {client.user}')
+
+PORT = getenv('PORT')
+client.loop.create_task(app.run_task('0.0.0.0', PORT))
 
 client.run(TOKEN)

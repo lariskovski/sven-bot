@@ -1,3 +1,4 @@
 aiohttp==3.7.4
 discord.py==1.7.1
 PyNaCl==1.4.0
+Quart==0.15.1

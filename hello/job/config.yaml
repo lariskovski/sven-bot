@@ -1,12 +1,54 @@
-apiVersion: v2
+piVersion: v2
 actions:
-  - name: "Be polite and say hello!"
+  - name: "Run Argo promote"
     events:
-      - name: "sh.keptn.event.remote-task.triggered"
+      - name: "sh.keptn.event.release.triggered"
+        jsonpath:
+          property: "$.data.deployment.deploymentstrategy"
+          match: "user_managed"
     tasks:
-      - name: "Greet the world"
+      - name: "Execute Argo promote"
+        image: "quay.io/argoproj/kubectl-argo-rollouts"
+        args: ["promote", "$(SERVICE)-$(STAGE)", "-n", "$(PROJECT)-$(STAGE)"]
+        serviceAccount: "jes-argo"
+        env:
+          - name: SERVICE
+            value: "$.data.service"
+            valueFrom: event
+          - name: STAGE
+            value: "$.data.stage"
+            valueFrom: event
+          - name: PROJECT
+            value: "$.data.project"
+            valueFrom: event
+
+  - name: "Run Argo rollback"
+    events:
+      - name: "sh.keptn.event.rollback.triggered"
+    tasks:
+      - name: "Execute argo rollback"
+        image: "quay.io/argoproj/kubectl-argo-rollouts"
+        args: [ "abort", "$(SERVICE)-$(STAGE)", "-n", "$(PROJECT)-$(STAGE)" ]
+        serviceAccount: "jes-argo"
+        env:
+          - name: SERVICE
+            value: "$.data.service"
+            valueFrom: event
+          - name: STAGE
+            value: "$.data.stage"
+            valueFrom: event
+          - name: PROJECT
+            value: "$.data.project"
+            valueFrom: event
+
+  - name: "Argo test canary"
+    events:
+      - name: "sh.keptn.event.test.triggered"
+        jsonpath:
+          property: "$.data.test.teststrategy"
+          match: "real-user"
+    tasks:
+      - name: "Wait for canary wait duration"
         image: "alpine"
-        cmd:
-          - echo
-        args:
-          - "Hello World"
+        cmd: [ "sleep" ]
+        args: [ "60s" ]
